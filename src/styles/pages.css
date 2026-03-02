@@ -1,0 +1,210 @@
+.page { padding: 10px 0 30px; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+.hero-text h1 { font-size: 2.2rem; margin-bottom: 10px; }
+.hero-text p { color: var(--muted); }
+
+.hero-actions { display: flex; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+
+.badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.badge {
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.hero-card ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+/* Reviews grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+.quote { font-size: 1.02rem; }
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.form label { display: grid; gap: 8px; margin-bottom: 12px; color: var(--muted); }
+input, textarea {
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  outline: none;
+}
+input:focus, textarea:focus { border-color: rgba(110,168,254,0.55); }
+
+.btn.whatsapp {
+  background: rgba(37, 211, 102, 0.15);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+}
+.wa-icon { font-size: 1.2rem; }
+
+/* Footer */
+.footer { border-top: 1px solid var(--border); padding: 18px 0; }
+.footer-inner { display: flex; justify-content: center; color: var(--muted); }
+
+/* Responsive rules: mobile becomes vertical lists */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .subjects-grid { grid-template-columns: 1fr; }   /* vertical on phone */
+  .reviews-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .subjects-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------- Home Page (Clean + Spaced) ---------- */
+.homeHero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+.homeTag {
+  display: inline-flex;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.homeH1 {
+  margin: 16px 0 6px;
+  font-size: 2.6rem;
+  line-height: 1.05;
+}
+
+.homeH2 {
+  margin: 0 0 14px;
+  font-size: 1.35rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.homeP {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.homeButtons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 18px 0 10px;
+}
+
+.homeBadges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.homeBadge {
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.cardTitle {
+  margin: 0 0 10px;
+}
+
+.homeBullets {
+  margin: 10px 0 0;
+  padding-left: 18px; /* true bullets */
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.homeBullets li {
+  margin-bottom: 8px; /* spacing between bullet points */
+}
+
+.homeMiniCta {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 10px;
+}
+
+.homeSection {
+  margin-top: 34px; /* more whitespace between sections */
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+}
+
+.homeCards {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.homeSplit {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .homeHero {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .homeH1 {
+    font-size: 2.1rem;
+  }
+  .homeCards {
+    grid-template-columns: 1fr;
+  }
+  .homeSplit {
+    grid-template-columns: 1fr;
+  }
+}
