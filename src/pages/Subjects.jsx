@@ -2,6 +2,7 @@ import "../styles/pages.css";
 
 const subjects = [
   { title: "Maths", level: "KS2 • KS3 • GCSE • A-Level", desc: "Core skills, problem-solving, exam practice." },
+  { title: "Further Maths", level: "GCSE • A-Level", desc: "Real projects, confidence with code." },
   { title: "Physics", level: "GCSE • A-Level", desc: "Concept clarity, equations, exam technique." },
   { title: "Chemistry", level: "GCSE • A-Level", desc: "Topics broken down, required practicals support." },
   { title: "Biology", level: "GCSE • A-Level", desc: "Key processes, mark schemes, diagrams explained." },

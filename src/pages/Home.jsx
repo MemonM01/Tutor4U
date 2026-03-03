@@ -51,7 +51,7 @@ export default function Home() {
               Message me with the student’s <strong>year group</strong>, <strong>subject</strong>{" "}
               and <strong>target grade</strong>.
             </p>
-            <Link className="btn" to="/contact">
+            <Link className="btn primary" to="/contact">
               Contact Me
             </Link>
           </div>
