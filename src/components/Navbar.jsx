@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FaBars, FaTimes, FaHome, FaBook, FaStar, FaEnvelope } from "react-icons/fa";
+import logo from "../assets/logo.svg";
 import "../styles/navbar.css";
 
 export default function Navbar() {
@@ -12,7 +13,8 @@ export default function Navbar() {
     <header className="nav-header">
       <div className="nav-inner">
         <NavLink to="/" className="brand" onClick={closeMenu}>
-          Tutor<span className="brand-accent">4</span>U
+          <img src={logo} alt="" className="brand-logo" width="32" height="32" />
+          Sig <span className="brand-accent">Fig</span> Tutors
         </NavLink>
 
         <button
@@ -43,6 +45,10 @@ export default function Navbar() {
             <FaEnvelope className="nav-icon" />
             <span>Contact</span>
           </NavLink>
+
+          <Link to="/contact" className="nav-cta" onClick={closeMenu}>
+            Become a Tutor
+          </Link>
         </nav>
       </div>
     </header>

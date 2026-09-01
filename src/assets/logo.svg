@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Sig Fig Tutors logo">
+  <circle cx="100" cy="100" r="100" fill="#16213e"/>
+  <text
+    x="88"
+    y="132"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="800"
+    font-size="92"
+    fill="#f7f3ea"
+  >SF</text>
+  <circle cx="164" cy="123" r="14" fill="#2ecc9d"/>
+</svg>
